@@ -19,7 +19,7 @@
     </header>
     <main>
       <section>
-        <h1>Sedona</h1>
+        <h1 class="visually-hidden">Sedona</h1>
         <img src="img/intro-welcome.svg" width="457" height="351" alt="Добро пожаловать">
       </section>
       <section>
@@ -106,8 +106,26 @@
       </p>
     </footer>
     <section>
-      <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
-      <!-- Здесь будет форма -->
+      <h3>поиск гостиницы в седоне</h3>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+        <label for="arrive-date">дата заезда:</label>
+        <input id="arrive-date" type="text" name="date_arrive" placeholder="24 апреля 2017">
+        </p>
+        <p>
+          <label for="leave-date">дата выезда:</label>
+          <input id="leave-date" type="text" name="date_leave" placeholder="4 июля 2017">
+        </p>
+        <p>
+          <label for="adult">взрослые:</label>
+          <input id="adult" type="number" name="number_adult" placeholder="2">
+        </p>
+        <p>
+          <label for="children">дети:</label>
+          <input id="children" type="number" name="number_children" placeholder="0">
+        </p>
+        <button type="submit">найти</button>
+      </form>
     </section>
   </body>
 </html>
