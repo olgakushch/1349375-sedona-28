@@ -22,7 +22,7 @@
     <main>
       <section>
         <h2 class="visually-hidden">Фильтр условий жилья</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get" oninput="dayprice.value=price.value">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -58,12 +58,15 @@
             </ul>
           </fieldset>
         <div>
-          <!-- здесь будет форма-->
+          <label for="cost-day">Стоимость в сутки (Р):</label>
+          <input type="range" name="price" id="cost-day" min="0" max="10000">
+          <output name="dayprice"></output>
           <button type="submit">Показать</button>
         </div>
         </form>
       </section>
       <section>
+        <p>Найдено: 3</p>
         <p>Сортировка:</p>
         <ul>
           <li><a href="#">По цене</a></li>
