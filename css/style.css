@@ -1,1 +1,167 @@
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-dark: #333333;
+  --basic-white: #FFFFFF;
 
+  --basic-blue: #81B3D2;
+  --blue-hover: #669EC0;
+  --blue-focus: #5496BD;
+
+  --basic-gray: #EEEEEE;
+  --gray-pointer: #CACACA;
+  --gray-date-base: #F2F2F2;
+  --gray-date-hover: #EBEBEB;
+  --gray-sign: #A9A9A9;
+  --gray-round: #ABABAB;
+  --gray-border: #E5E5E5;
+  --gray-rating: #666666;
+
+  --basic-brown: #766357;
+  --brown-hover: #604E43;
+  --brown-focus: #503E33;
+
+  --filter-focus: #6A6A6A;
+  --special: rgba(255, 255, 255, 0.9);
+
+  --html-base: #231F20;
+  --html-focus: #BDBBBC;
+}
+/* Glabal */
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+a {
+  text-decoration: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+/* navigation */
+.main-navigation {
+  font-weight: bold;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: var(--basic-black);
+}
+.site-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3
+}
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+.img {
+  text-align: center;
+}
+/* main*/
+.caption {
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.text {
+  text-align: center;
+  line-height: 26px;
+}
+.title {
+  font-size: 21px;
+  font-weight: bold;
+}
+.application {
+  line-height: 24px;
+  text-align: center;
+}
+.application h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.hotel h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+.button {
+  color: var(--basic-white);
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.button-detail {
+  background-color: var(--basic-blue);
+}
+.button-detail:hover {
+  background-color: var(--blue-hover);
+}
+.button-detail:focus {
+  background-color: var(--blue-focus);
+}
+.button-reserve {
+  background-color: var(--basic-brown);
+}
+.button-reserve:hover {
+  background-color: var(--brown-hover);
+}
+.button-reserve:focus {
+  background-color: var(--brown-focus);
+}
+.reyting p {
+  background-color: var(--gray-date-base);
+  color: var(--gray-rating);
+  width: 110px;
+  height: 27px;
+}
+/* footer*/
+.page-footer {
+  opacity: 0.9;
+  background-color: var(--basic-white);
+}
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.footer-contacts a {
+  color: var(--basic-black);
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social ul {
+  list-style: none;
+}
+.footer-social a:hover {
+  color: var(--blue-hover);
+}
+.footer-social a:focus {
+  color: var(--blue-focus);
+}
+.social-button {
+  color: inherit;
+}
+.button-copyright {
+  color: var(--html-base);
+}
+.button-copyright:hover {
+  color: var(--basic-blue);
+}
+.button-copyright:focus {
+  color: var(--html-focus);
+}
