@@ -44,8 +44,8 @@ a {
   text-decoration: none;
 }
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 /* navigation */
 .main-navigation {
@@ -53,9 +53,6 @@ height: auto;
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-}
-.site-navigation {
-  list-style: none;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -71,6 +68,15 @@ height: auto;
   text-align: center;
 }
 /* main*/
+.site-navigation li:nth-child(-n+2) {
+  text-align: left;
+}
+.site-navigation li:nth-child(n+3) {
+  text-align: right;
+}
+.decor-list {
+  list-style: none;
+}
 .caption {
   background-image: url("../img/background.jpg");
   background-position: top center;
@@ -143,9 +149,6 @@ height: auto;
 }
 .footer-social {
   text-align: center;
-}
-.footer-social ul {
-  list-style: none;
 }
 .footer-social a:hover {
   color: var(--blue-hover);
