@@ -47,12 +47,38 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Grid */
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 /* navigation */
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: bold;
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+.main-navigation-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.main-navigation-logo img {
+  display: block;
+  margin: 0 auto;
+}
+.site-navigation {
+  margin: 0;
+  padding: 0;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -64,44 +90,139 @@ img {
 .site-navigation a:hover {
   color: var(--basic-blue);
 }
+.site-navigation li:nth-child(3),
+ .site-navigation li:nth-child(4) {
+  text-align: right;
+}
+/* main*/
 .caption img {
   display: block;
   margin: 0 auto;
 }
-/* main*/
-.site-navigation li:nth-child(3),
- li:nth-child(4) {
-  text-align: right
-}
 .decor-list {
   list-style: none;
 }
+.img {
+  padding-bottom: 80px;
+  padding-top: 77px;
+}
+.img h1 {
+  margin: 0;
+}
 .caption {
   background-image: url("../img/background.jpg");
-  background-position: top center;
+  background-position: center, 0 0;
   background-repeat: no-repeat;
 }
 .text {
   text-align: center;
   line-height: 26px;
+  margin-top: 96px;
+  margin-bottom: 54px;
 }
 .title {
   font-size: 21px;
   font-weight: bold;
+  padding-bottom:
 }
 .application {
   line-height: 24px;
   text-align: center;
+  padding-top: 58px;
+  padding-bottom: 78px;
 }
 .application h3 {
   font-weight: bold;
   font-size: 30px;
+  margin: 0;
+}
+.desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 256px;
+}
+.desc img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.slogan {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  padding-left: 52px;
+  padding-right: 51px;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+.desc-bridge img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.desc-bridge .slogan {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.features {
+  margin-bottom: 82px;
+  margin-top: 61px;
+}
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 124px;
+  margin: 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0;
+}
+.feature-item {
+  text-align: center;
+}
+.benefits {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.benefits-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 168px;
+  margin: 0;
+  margin-left: 96px;
+  margin-right: 77px;
+  padding: 0;
+}
+.benefits-item {
+  text-align: center;
+}
+.result-hotels {
+  display: flex;
+  margin: 30px 73px;
+  flex-direction: row;
+}
+.hotel {
+  margin-left: 29px;
 }
 .hotel h2 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
+  margin: 0;
+}
+.result-hotels .reyting {
+  margin-left: auto;
+  text-align: center;
+  align-self: flex-end;
+}
+.reyting p {
+  background-color: var(--gray-date-base);
+  color: var(--gray-rating);
+  width: 110px;
+  height: 27px;
 }
 .button {
   color: var(--basic-white);
@@ -127,27 +248,40 @@ img {
 .button-reserve:focus {
   background-color: var(--brown-focus);
 }
-.reyting p {
-  background-color: var(--gray-date-base);
-  color: var(--gray-rating);
-  width: 110px;
-  height: 27px;
-}
 /* footer*/
+.page-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 111px;
+  padding-right: 139px;
+}
 .page-footer {
   opacity: 0.9;
   background-color: var(--basic-white);
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0;
+  width: 251px;
+}
+.footer-contacts p {
+  margin: 0;
 }
 .footer-contacts a {
   color: var(--basic-black);
 }
 .footer-social {
   text-align: center;
+  width: 145px;
+  justify-self: center;
+}
+.footer-social ul {
+  padding: 0;
+  margin: 0 auto;
 }
 .footer-social a:hover {
   color: var(--blue-hover);
@@ -157,6 +291,12 @@ img {
 }
 .social-button {
   color: inherit;
+}
+.footer-copyright {
+  text-align: center;
+  width: 145px;
+  justify-self: end;
+  margin: 0;
 }
 .button-copyright {
   color: var(--html-base);

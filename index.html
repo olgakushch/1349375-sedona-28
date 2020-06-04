@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -9,24 +9,28 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <ul class="site-navigation decor-list">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-        <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны">
+        <a class="main-navigation-logo">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны">
+        </a>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation decor-list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
       <section class="caption">
         <div class="img">
-        <h1 class="visually-hidden">Sedona</h1>
-        <img src="img/intro-welcome.svg" width="457" height="351" alt="Добро пожаловать">
+          <h1 class="visually-hidden">Sedona</h1>
+          <img src="img/intro-welcome.svg" width="457" height="351" alt="Добро пожаловать">
         </div>
       </section>
       <section class="text">
-        <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p class="title-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="desc">
@@ -42,8 +46,8 @@
           <li class="feature-item">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li class="feature-item">
-          <li>
+          </li>
+          <li class="feature-item">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
@@ -53,7 +57,7 @@
           </li>
         </ul>
       </section>
-      <section class="desc">
+      <section class="desc desc-bridge">
         <img src="img/canyon.jpg" width="800" height="256" alt="мост дьявола">
         <div class="slogan">
           <h2>Там есть Мост дьявола</h2>
@@ -91,37 +95,39 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <p>#visitSEDONA</p>
-        <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
-      </section>
-      <section class="footer-social">
-        <ul class="decor-list">
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <img src="img/twitter.svg" width="17" height="17" alt="Twitter" class="Twitter">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <img src="img/facebook.svg" width="12" height="22" alt="Facebook" class="Facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <img src="img/youtube.svg" width="20" height="16" alt="Youtube" class="Youtube">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <p class="footer-copyright">Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="button-copyright" src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
-        </a>
-      </p>
+      <div class="container">
+        <section class="footer-contacts">
+          <p>#visitSEDONA</p>
+          <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+        </section>
+        <section class="footer-social">
+          <ul class="decor-list">
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <img src="img/twitter.svg" width="17" height="17" alt="Twitter" class="Twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <img src="img/facebook.svg" width="12" height="22" alt="Facebook" class="Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Youtube</span>
+                <img src="img/youtube.svg" width="20" height="16" alt="Youtube" class="Youtube">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <p class="footer-copyright">Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="button-copyright" src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
+          </a>
+        </p>
+      </div>
     </footer>
     <section>
       <h3>Поиск гостиницы в Седоне</h3>

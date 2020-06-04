@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html class="page" lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header>
       <h1 class="visually-hidden">Поиск жилья</h1>
       <nav class="main-navigation">
-        <ul class="site-navigation decor-list">
-          <li ><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-        <a href="index.html">
+        <a class="main-navigation-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип Седоны">
         </a>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation decor-list">
+            <li ><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -94,7 +96,7 @@
           <p>Рейтинг: 8,5</p>
         </div>
       </section>
-      <section>
+      <section class="result-hotels">
         <a href="#">
           <img src="img/quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
         </a>
@@ -111,7 +113,7 @@
           <p>Рейтинг: 8,9</p>
         </div>
       </section>
-      <section>
+      <section class="result-hotels">
         <a href="#">
           <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         </a>
@@ -130,37 +132,39 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <p>#visitSEDONA</p>
-        <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
-      </section>
-      <section class="footer-social">
-        <ul class="decor-list">
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-              <img src="img/twitter.svg" width="17" height="17" alt="Twitter">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <img src="img/facebook.svg" width="12" height="22" alt="Facebook">
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Youtube</span>
-              <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <p>Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
-        </a>
-      </p>
+      <div class="container">
+        <section class="footer-contacts">
+          <p>#visitSEDONA</p>
+          <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+        </section>
+        <section class="footer-social">
+          <ul class="decor-list">
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <img src="img/twitter.svg" width="17" height="17" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <img src="img/facebook.svg" width="12" height="22" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Youtube</span>
+                <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <p class="footer-copyright">Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="логотип htmlacademy">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
