@@ -38,7 +38,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: var(--gray-date-base);
 }
 a {
   text-decoration: none;
@@ -46,6 +46,20 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Grid */
 .page {
@@ -57,10 +71,14 @@ img {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+.center-page {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+}
 /* navigation */
 .main-navigation {
   display: flex;
-  flex-direction: column;
   align-items: center;
   font-weight: bold;
   line-height: 26px;
@@ -79,6 +97,8 @@ img {
 .site-navigation {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 .site-navigation a {
   color: var(--basic-black);
@@ -131,10 +151,15 @@ img {
   padding-top: 58px;
   padding-bottom: 78px;
 }
+.application-bloc {
+  margin: 0 auto;
+  width: 435px;
+  height: 155px;
+}
 .application h3 {
   font-weight: bold;
   font-size: 30px;
-  margin: 0;
+  margin-top: 0;
 }
 .desc {
   display: grid;
@@ -155,6 +180,9 @@ img {
   padding-right: 51px;
   padding-top: 47px;
   padding-bottom: 54px;
+  width: 297px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
 .desc-bridge img {
   grid-column-start: 1;
@@ -165,6 +193,11 @@ img {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  padding-left: 50px;
+  padding-right: 49px;
+  padding-top: 50px;
+  padding-bottom: 51px;
+  width: 301px;
 }
 .features {
   margin-bottom: 82px;
@@ -183,8 +216,9 @@ img {
   text-align: center;
 }
 .benefits {
-  margin-bottom: 40px;
-  margin-top: 30px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-color: var(--basic-gray);
 }
 .benefits-list {
   display: grid;
@@ -200,11 +234,22 @@ img {
 }
 .result-hotels {
   display: flex;
-  margin: 30px 73px;
+  padding-bottom: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
   flex-direction: row;
+  border-top: 1px solid var(--gray-border);
+  height: 120px;
+}
+.result-hotels:last-child {
+  border-bottom: 1px solid var(--gray-border);
+}
+.result-hotels img {
+  padding-top: 30px;
 }
 .hotel {
   margin-left: 29px;
+  padding-top: 23px;
 }
 .hotel h2 {
   font-size: 21px;
@@ -221,17 +266,23 @@ img {
 .reyting p {
   background-color: var(--gray-date-base);
   color: var(--gray-rating);
-  width: 110px;
-  height: 27px;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 12px;
+  margin: 0;
 }
 .button {
   color: var(--basic-white);
   text-align: center;
   font-weight: bold;
   vertical-align: middle;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .button-detail {
   background-color: var(--basic-blue);
+  padding-left: 17px;
+  padding-right: 16px;
 }
 .button-detail:hover {
   background-color: var(--blue-hover);
@@ -241,6 +292,8 @@ img {
 }
 .button-reserve {
   background-color: var(--basic-brown);
+  padding-left: 16px;
+  padding-right: 17px;
 }
 .button-reserve:hover {
   background-color: var(--brown-hover);
@@ -267,6 +320,7 @@ img {
   font-weight: bold;
   margin: 0;
   width: 251px;
+  text-align: center;
 }
 .footer-contacts p {
   margin: 0;
