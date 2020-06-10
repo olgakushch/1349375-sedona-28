@@ -294,7 +294,10 @@ input[type="radio"].visually-hidden {
 
 .hotel {
   margin-left: 29px;
-  margin-top: 27px;
+  margin-top: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
 }
 
 .hotel h2 {
@@ -303,11 +306,21 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: var(--basic-black);
   margin: 0;
+  width: 100%;
 }
 
 .hotel p {
   margin-top: 7px;
   margin-bottom: 16px;
+}
+
+.type-accommodation {
+  width: 107px;
+  margin-right: 9px;
+}
+
+.cost-accommodation {
+  width: 96px;
 }
 
 .result-hotels .reyting {
@@ -336,8 +349,8 @@ input[type="radio"].visually-hidden {
 
 .button-detail {
   background-color: var(--basic-blue);
-  padding-left: 17px;
-  padding-right: 16px;
+  width: 110px;
+  margin-right: 6px;
 }
 
 .button-detail:hover {
@@ -350,8 +363,7 @@ input[type="radio"].visually-hidden {
 
 .button-reserve {
   background-color: var(--basic-brown);
-  padding-left: 16px;
-  padding-right: 17px;
+  width: 142px;
 }
 
 .button-reserve:hover {
